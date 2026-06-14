@@ -4,5 +4,4 @@
 |------------|------------|------|
 | [dynex-large-transactions-plugin](https://github.com/logicencoder/dynex-large-transactions-plugin) | private | WordPress display + REST ingest |
 | [dynex-large-transactions-plugin-overview](https://github.com/logicencoder/dynex-large-transactions-plugin-overview) | public | **Portfolio product description** (this repo) |
-
-Ingest worker `dnx_large_txs.py` runs on operator infrastructure (no separate public overview).
+| [dynex-large-transactions-monitor-overview](https://github.com/logicencoder/dynex-large-transactions-monitor-overview) | public | Chain monitor service (`dnx_large_txs.py`) |

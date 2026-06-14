@@ -2,7 +2,11 @@
 
 Displays **large Dynex (DNX) on-chain transfers** on logicencoder.com — aggregate stats, searchable history, pagination, and optional auto-refresh. Ingest is push-only from a private chain worker; the plugin never talks to the Dynex node.
 
-Private plugin: [logicencoder/dynex-large-transactions-plugin](https://github.com/logicencoder/dynex-large-transactions-plugin).
+Private plugin: [logicencoder/dynex-large-transactions-plugin](https://github.com/logicencoder/dynex-large-transactions-plugin). Chain monitor: [dynex-large-transactions-monitor-overview](https://github.com/logicencoder/dynex-large-transactions-monitor-overview).
+
+## Live page
+
+**[logicencoder.com/dynex-large-transactions-monitor/](https://logicencoder.com/dynex-large-transactions-monitor/)**
 
 ## Visitor UI
 
@@ -14,15 +18,9 @@ Shortcode **`[dynex_transactions]`**:
 - Load-more and check-new AJAX without full page reload
 - Optional auto-refresh interval
 
-## Ingest worker (operator service)
+## Chain monitor
 
-**`dnx_large_txs.py`** on operator infrastructure:
-
-- Polls local Dynex JSON-RPC (`getblock`, transaction lists)
-- Filters transfers above a configurable DNX threshold
-- Batches JSON POST to WordPress with shared API key
-
-No separate public backend overview repo — the worker is documented in the private plugin README and `ARCHITECTURE.md`.
+**`dnx_large_txs.py`** polls the Dynex node, filters large transfers, and POSTs to this plugin. Full service description: [dynex-large-transactions-monitor-overview](https://github.com/logicencoder/dynex-large-transactions-monitor-overview).
 
 ## REST API
 
