@@ -1,6 +1,8 @@
-# Related repositories — Dynex large transactions (overview)
+# Related repositories
 
-| Repo | Visibility | Role |
-|------|------------|------|
-| [dynex-large-transactions-plugin](https://github.com/logicencoder/dynex-large-transactions-plugin) | **private** | Implementation |
-| [dynex-large-transactions-plugin-overview](https://github.com/logicencoder/dynex-large-transactions-plugin-overview) | **public** | This overview |
+| Repository | Visibility | Role |
+|------------|------------|------|
+| [dynex-large-transactions-plugin](https://github.com/logicencoder/dynex-large-transactions-plugin) | private | WordPress display + REST ingest |
+| [dynex-large-transactions-plugin-overview](https://github.com/logicencoder/dynex-large-transactions-plugin-overview) | public | **Portfolio product description** (this repo) |
+
+Ingest worker `dnx_large_txs.py` runs on operator infrastructure (no separate public overview).
