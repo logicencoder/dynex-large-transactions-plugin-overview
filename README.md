@@ -137,4 +137,41 @@ See [REPOS.md](REPOS.md).
 
 ---
 
+## Feature examples (two per capability)
+
+#### Large-transaction feed shortcode
+1. You add `[dynex_transactions]` to a page and visitors see large native DNX transfers above your worker threshold.
+2. You override `limit`, `title`, or `refresh` per page when you want a compact sidebar embed on a tools landing page.
+
+#### Transaction cards
+1. You scroll the feed and read each card’s time, block, hash, from/to wallets, and formatted DNX amount.
+2. You watch new whale moves appear at the top when the worker pushes the next batch and auto-refresh is enabled.
+
+#### Aggregate stats panels
+1. You expand the summary section for total count, today’s count, and cumulative DNX volume at a glance.
+2. You open collapsible analytics for hourly velocity and top wallets when headline cards are not enough.
+
+#### Wallet address search
+1. You paste a DNX address into the search box and see sent/received counts and volumes with paginated history.
+2. You page through results when you audit a repeat mover over many large transfers.
+
+#### Load more and live refresh
+1. You click **Load more** at the bottom and older large transactions append without a full page reload.
+2. You set refresh interval to zero in **Settings** when you want a static snapshot under heavy load.
+
+#### Settings (operator)
+1. You rotate the ingest **API key** in **Settings → Dynex Transactions** and update the matching secret on the worker.
+2. You adjust display limit, cache TTL, and show/hide toggles for stats and search without redeploying PHP.
+
+#### Dashboard widget (operator)
+1. You glance at the wp-admin home widget after a known whale event and confirm today’s count moved.
+2. You expand widget sections for velocity when the public page looks empty but you suspect an ingest issue.
+
+#### Shortcode docs in admin (operator)
+1. You copy documented shortcode examples from the settings screen when editors ask how to embed the monitor.
+2. You test attribute overrides on a draft page before publishing the production Dynex tools URL.
+
+
+---
+
 **Made by [Logic Encoder](https://logicencoder.com)** · [GitHub](https://github.com/logicencoder) · [Contact](https://logicencoder.com/contact/)
