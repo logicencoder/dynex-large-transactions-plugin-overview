@@ -1,6 +1,6 @@
 # Dynex Large Transactions — WordPress plugin
 
-![Large Dynex transactions — live monitor](assets/live-transactions-collapsed.png)
+![Large Dynex transactions — live monitor (expanded)](assets/live-transactions-expanded.png)
 
 **Large on-chain DNX transfers** in one place — ranked cards, aggregate network stats, and wallet-level search without running a Dynex node or parsing block explorer pages by hand. Traders, researchers, and community members use [logicencoder.com/dynex-large-transactions-monitor/](https://logicencoder.com/dynex-large-transactions-monitor/) to watch whale-sized moves and drill into any wallet’s send/receive history.
 
