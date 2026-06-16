@@ -12,9 +12,9 @@ A private Python monitor polls the Dynex chain, filters transfers above a size t
 |-------|--------------|
 | WordPress plugin | PHP (single-file ~3.6k LOC), shortcode, wp-admin UI, WordPress AJAX, WordPress REST ingest |
 | Public UI | HTML, CSS (Roboto, dark theme), JavaScript (jQuery, live poll, load-more, address search) |
-| WordPress database | MySQL — custom table `wp_dynex_transactions` with unique `tx_hash` |
+| WordPress database | MySQL — indexed transfer history with deduplicated transaction hashes |
 | Chain monitor | Python 3, Dynex JSON-RPC, SQLite buffer, authenticated REST push — see [monitor overview](https://github.com/logicencoder/dynex-large-transactions-monitor-overview) |
-| Ingest | `POST` with `X-API-Key` header; `INSERT IGNORE` per hash for idempotent replay |
+| Ingest | Authenticated REST batch push with idempotent replay on duplicate hashes |
 | Caching | Object-cache group for shortcode fragments; LiteSpeed no-cache on shortcode pages; purge on ingest |
 | Explorer links | Dynex block explorer URLs on block, transaction hash, and wallet fields |
 
