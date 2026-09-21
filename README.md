@@ -137,7 +137,7 @@ See [REPOS.md](REPOS.md).
 
 ---
 
-## Feature examples (two per capability)
+## Operator workflows
 
 #### Large-transaction feed shortcode
 1. You add `[dynex_transactions]` to a page and visitors see large native DNX transfers above your worker threshold.
