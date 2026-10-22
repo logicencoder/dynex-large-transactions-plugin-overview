@@ -31,7 +31,7 @@ Address search offers a more direct route when the visitor is investigating a pa
 
 ## Publish and maintain the dashboard
 
-The site owner can embed the view in WordPress and use administrator status and settings areas to maintain it. This keeps the public feed and operational checks within the same product. A readable desktop hero would make the existing detailed captures easier to approach.
+The site owner can embed the view in WordPress and use administrator status and settings areas to maintain it. This keeps the public feed and operational checks within the same product.
 
 ![Dynex Large Transactions — Publish and maintain the dashboard](assets/admin-dashboard.png)
 
